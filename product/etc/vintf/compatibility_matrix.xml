@@ -1,0 +1,83 @@
+<!--
+    Input:
+        device/xiaomi/missi/device_framework_compatibility_matrix/mtdservice/aidl/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/missi/device_framework_compatibility_matrix/mlipay/aidl/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/missi/device_framework_compatibility_matrix/mfidoca/aidl/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/missi/device_framework_compatibility_matrix/soterservice/aidl/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/missi/device_framework_compatibility_matrix/tidaservice/aidl/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/missi/device_framework_compatibility_matrix/otrpagent/aidl/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/missi/device_framework_compatibility_matrix/vsimapp/aidl/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/missi/device_framework_compatibility_matrix/mrm/vendor_framework_compatibility_matrix.xml
+-->
+<compatibility-matrix version="7.0" type="framework">
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.aidl.mtdservice</name>
+        <interface>
+            <name>IMTService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.aidl.tidaservice</name>
+        <interface>
+            <name>ITidaService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.mfidoca</name>
+        <interface>
+            <name>IFidoService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.mlipay</name>
+        <interface>
+            <name>IMlipayService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.mrm</name>
+        <interface>
+            <name>IMrm</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.mrm</name>
+        <interface>
+            <name>IMiCertificate</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.mrm</name>
+        <interface>
+            <name>IMrmRemoteAuth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.otrpagent2</name>
+        <interface>
+            <name>IOTrPAgent</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.soterservice</name>
+        <interface>
+            <name>ISoter</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.vsimapp</name>
+        <interface>
+            <name>IVSIMService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>

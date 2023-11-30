@@ -1,0 +1,29 @@
+{
+  "apps": [
+    {
+      "packageName": "com.ss.android.ugc.aweme",
+      "isOptimizeEnable": "1",
+      "optimizePath": "files/offlineX;cache/cachev2;files/webofflinex;files/npth"
+    },
+    {
+      "packageName": "com.smile.gifmaker",
+      "isOptimizeEnable": "0",
+      "optimizePath": "files/debuglog;files/.hodor;databases;files/image_cache;files/mini_app;files/ks_webview;"
+    },
+    {
+      "packageName": "com.kuaishou.nebula",
+      "isOptimizeEnable": "0",
+      "optimizePath": "files/.hodor;files/debuglog;files/image_cache;databases"
+    },
+    {
+      "packageName": "com.ss.android.ugc.aweme.lite",
+      "isOptimizeEnable": "1",
+      "optimizePath": "cache/cachev2;files/offlineX"
+    },
+    {
+      "packageName": "com.ss.android.ugc.live",
+      "isOptimizeEnable": "1",
+      "optimizePath": "cache/cachev2;files/offlineX;files/logs"
+    }
+  ]
+}

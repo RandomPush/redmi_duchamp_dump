@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2015, The Linux Foundation. All rights reserved.
+-->
+
+<!-- Assist library for NQ NFC extensions. -->
+<!--MIUI MOD: NFC_StabilityEnhance -->
+<permissions>
+    <library name="com.nxp.nfc.nq"
+        file="/system/framework/com.nxp.nfc.nq.jar" />
+</permissions>
+<!--END NFC_StabilityEnhance -->

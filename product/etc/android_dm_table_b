@@ -1,0 +1,11 @@
+create mireuse_b
+linear 0       409600  /dev/block/by-name/modem_b 0
+linear 409600  131072  /dev/block/by-name/boot_b 0
+linear 540672  131072  /dev/block/by-name/vendor_boot_b 0
+linear 671744  131072  /dev/block/by-name/mvpu_algo_b 0
+linear 802816  65536   /dev/block/by-name/mcf_ota_b 0
+linear 868352  32768   /dev/block/by-name/audio_dsp_b 0
+linear 901120  16384   /dev/block/by-name/connsys_bt_b 0
+linear 917504  16384   /dev/block/by-name/connsys_wifi_b 0
+linear 933888  16384   /dev/block/by-name/init_boot_b 0
+linear 950272  16384   /dev/block/by-name/connsys_gnss_b 0
