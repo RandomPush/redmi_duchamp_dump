@@ -1,0 +1,12 @@
+# HBT Leroy testing
+# This file is only for testing,
+# please clear the file before using, the file is not for production use!
+# Use echo "" > init.hbt.leroy.rc to clear the file
+
+# grant /dev/hbt
+on property:sys.boot_completed=1 && property:persist.device_config.vendor_system_native.hbt_driver_grant=1
+    chmod 666 /dev/hbt
+
+# Keep zygote_HBT open
+on property:sys.boot_completed=1 && property:persist.device_config.vendor_system_native.hbt_driver_grant=1 && property:persist.device_config.vendor_system_native.zygote_HBT=*
+    start zygote_HBT

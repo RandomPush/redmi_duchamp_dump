@@ -1,0 +1,4 @@
+<permissions>
+    <library name="vendor.hardware.vibratorfeature"
+             file="/system/framework/vendor.hardware.vibratorfeature.jar" />
+</permissions>

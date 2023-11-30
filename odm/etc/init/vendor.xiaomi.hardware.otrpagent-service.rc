@@ -1,0 +1,8 @@
+on post-fs-data
+    mkdir /data/vendor/otrp 0700 system system
+    mkdir /mnt/vendor/persist/otrp 0700 system system
+
+service vendor.otrpagent /odm/bin/vendor.xiaomi.hardware.otrpagent2
+    class hal
+    group system drmrpc
+    user system

@@ -1,0 +1,207 @@
+{
+    "PipelineName": "SuperHdSnapshot",
+    "NodesList": {
+        "Node": [
+            {
+                "NodeName": "com.xiaomi.plugin.hwproc",
+                "NodeInstance": "MfnrInstance",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 4
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwproc",
+                "NodeInstance": "MfnrInstance0",
+                "NodeResources": [
+                    {
+                        "ResourceID": 0,
+                        "ResourceValue": 100
+                    }
+                ],
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 4
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwproc",
+                "NodeInstance": "MfnrInstance1"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hdr",
+                "NodeInstance": "HdrInstance"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwproc",
+                "NodeInstance": "Raw2YuvInstance0"
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwproc",
+                "NodeInstance": "Raw2YuvInstance",
+                "NodeProperty": [
+                    {
+                        "NodePropertyName": "NodeMask",
+                        "NodePropertyValue": 4
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwproc",
+                "NodeInstance": "Raw2YuvInstance1",
+                "NodeResources": [
+                    {
+                        "ResourceID": 0,
+                        "ResourceValue": 100
+                    }
+                ]
+            },
+            {
+                "NodeName": "com.xiaomi.plugin.hwproc",
+                "NodeInstance": "Yuv2YuvScaleInstance",
+                "NodeProperty":[
+                    {
+                         "NodePropertyName":"NodeMask",
+                         "NodePropertyValue":4
+            }
+        ]
+            }
+        ]
+    },
+    "PortLinkages": {
+        "Link": [
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SourceBuffer"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MfnrInstance",
+                    "PortFormat": "RAW10"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 1,
+                    "NodeInstance": "SourceBuffer"
+                },
+                "DstPort": {
+                    "PortId": 1,
+                    "NodeInstance": "MfnrInstance",
+                    "PortFormat": "RAW10"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 2,
+                    "NodeInstance": "SourceBuffer"
+                },
+                "DstPort": {
+                    "PortId": 2,
+                    "NodeInstance": "Raw2YuvInstance0"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 2,
+                    "NodeInstance": "Raw2YuvInstance0",
+                    "PortFormat": "YUV420_NV21",
+                    "OutputBufferNumber": "FollowInPut"
+                },
+                "DstPort": {
+                    "PortId": 2,
+                    "NodeInstance": "Raw2YuvInstance1"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 2,
+                    "NodeInstance": "Raw2YuvInstance1",
+                    "PortFormat": "YUV420_NV21",
+                    "OutputBufferNumber": "FollowInPut"
+                },
+                "DstPort": {
+                    "PortId": 2,
+                    "NodeInstance": "HdrInstance",
+                    "PortFormat": "YUV420_NV21"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MfnrInstance",
+                    "PortFormat": "YUV420_NV21"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MfnrInstance0",
+                    "PortFormat": "RAW10"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MfnrInstance0",
+                    "PortFormat": "YUV420_NV21"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MfnrInstance1",
+                    "PortFormat": "RAW10"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "MfnrInstance1",
+                    "PortFormat": "YUV420_NV21"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "Raw2YuvInstance",
+                    "PortFormat": "RAW10"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "Raw2YuvInstance",
+                    "PortFormat": "YUV420_NV21"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HdrInstance",
+                    "PortFormat": "YUV420_NV21"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "HdrInstance",
+                    "PortFormat": "YUV420_NV21"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "Yuv2YuvScaleInstance",
+                    "PortFormat": "YUV420_NV21"
+                }
+            },
+            {
+                "SrcPort": {
+                    "PortId": 0,
+                    "NodeInstance": "Yuv2YuvScaleInstance",
+                    "PortFormat": "YUV420_NV21"
+                },
+                "DstPort": {
+                    "PortId": 0,
+                    "NodeInstance": "SinkBuffer"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+	"Type":"Effect",
+	"TrueSight":
+	[
+		{
+			"ConfigurePath":"configuration.json",
+			"Index":0,
+			"Mode":"All"
+		}
+	]
+}

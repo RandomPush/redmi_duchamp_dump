@@ -1,0 +1,14 @@
+# missi_phone_cn-user 14 UP1A.230905.011 V816.0.4.0.UNLCNXM release-keys
+- manufacturer: xiaomi
+- platform: commonmt6897
+- codename: duchamp
+- flavor: missi_phone_cn-user
+- release: 14
+- id: UP1A.230905.011
+- incremental: V816.0.4.0.UNLCNXM
+- tags: release-keys
+- fingerprint: Redmi/duchamp/duchamp:14/UP1A.230905.011/V816.0.4.0.UNLCNXM:user/release-keys
+- is_ab: true
+- brand: Redmi
+- branch: missi_phone_cn-user-14-UP1A.230905.011-V816.0.4.0.UNLCNXM-release-keys
+- repo: redmi_duchamp_dump

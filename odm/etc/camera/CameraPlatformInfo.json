@@ -1,0 +1,160 @@
+{
+    "product": "duchamp",
+    "deviceInfo": {
+        "size": 6,
+        "0": {
+            "roleId"     : 0,
+            "sensorNameId" : "3002"
+        },
+        "1": {
+            "roleId"     : 1,
+            "sensorNameId" : "3004"
+        },
+        "2": {
+            "roleId"     : 21,
+            "sensorNameId" : "3003"
+        },
+        "3": {
+            "roleId"     : 22,
+            "sensorNameId" : "5000"
+        },
+        "4": {
+            "roleId"     : 60,
+            "sensorNameId" : "3002;3003"
+        },
+        "5": {
+            "roleId"     : 63,
+            "sensorNameId" : "3002;3003"
+        }
+    },
+    "dualCamInfo": {
+        "size": 1,
+        "0": {
+            "masterRoleId"     : 0,
+            "slaveRoleId"      : 21,
+            "dumpFile"         : "/data/vendor/camera/com.xiaomi.dcal.wu.data",
+            "goldenFile"       : "/vendor/etc/camera/com.xiaomi.dcal.wu.golden",
+            "isEepromData"     : false,
+            "eepromDataRoleId" : 0,
+            "eepromOffset"     : 0,
+            "eepromDataSize"   : 4096
+        }
+    },
+    "eepromMapInfo": {
+        "RoleIdRearWide": {
+            "sunny": {
+                "fuseIdOffset"     : 16,
+                "fuseIdSize"       : 16,
+                "qrCodeFlagOffset" : 16354,
+                "qrCodeOffset"     : 16355,
+                "qrCodeSize"       : 14,
+                "hasOISMap"        : true,
+                "OISDataMap": {
+                    "OISGainXOffset"   : 8431,
+                    "OISGainYOffset"   : 8463,
+                    "OISDelayXOffset"  : 8433,
+                    "OISDelayYOffset"  : 8465,
+                    "OISStrokeXOffset" : 8458,
+                    "OISStrokeYOffset" : 8490
+                }
+            },
+            "_aac": {
+                "fuseIdOffset"     : 16,
+                "fuseIdSize"       : 16,
+                "qrCodeFlagOffset" : 16354,
+                "qrCodeOffset"     : 16355,
+                "qrCodeSize"       : 14,
+                "hasOISMap"        : true,
+                "OISDataMap": {
+                    "OISGainXOffset"   : 8431,
+                    "OISGainYOffset"   : 8463,
+                    "OISDelayXOffset"  : 8433,
+                    "OISDelayYOffset"  : 8465,
+                    "OISStrokeXOffset" : 8458,
+                    "OISStrokeYOffset" : 8490
+                }
+            }
+        },
+        "RoleIdFront": {
+            "ofilm": {
+                "fuseIdOffset"     : 16,
+                "fuseIdSize"       : 16,
+                "qrCodeFlagOffset" : 8081,
+                "qrCodeOffset"     : 8082,
+                "qrCodeSize"       : 14,
+                "hasOISMap"        : false
+            },
+            "_aac": {
+                "fuseIdOffset"     : 16,
+                "fuseIdSize"       : 16,
+                "qrCodeFlagOffset" : 8081,
+                "qrCodeOffset"     : 8082,
+                "qrCodeSize"       : 14,
+                "hasOISMap"        : false
+            }
+        },
+        "RoleIdRearUltra": {
+            "_aac": {
+                "fuseIdOffset"     : 16,
+                "fuseIdSize"       : 16,
+                "qrCodeFlagOffset" : 8081,
+                "qrCodeOffset"     : 8082,
+                "qrCodeSize"       : 14,
+                "hasOISMap"        : false
+            },
+            "sunny": {
+                "fuseIdOffset"     : 16,
+                "fuseIdSize"       : 16,
+                "qrCodeFlagOffset" : 8081,
+                "qrCodeOffset"     : 8082,
+                "qrCodeSize"       : 14,
+                "hasOISMap"        : false
+            }
+        },
+        "RoleIdRearMacro": {
+            "sunny": {
+                "fuseIdOffset"     : 16,
+                "fuseIdSize"       : 8,
+                "qrCodeFlagOffset" : 8081,
+                "qrCodeOffset"     : 8082,
+                "qrCodeSize"       : 14,
+                "hasOISMap"        : false
+            },
+            "_aac": {
+                "fuseIdOffset"     : 16,
+                "fuseIdSize"       : 8,
+                "qrCodeFlagOffset" : 8081,
+                "qrCodeOffset"     : 8082,
+                "qrCodeSize"       : 14,
+                "hasOISMap"        : false
+            }
+        }
+    },
+    "InSensorZoom": {
+        "mode": 2,
+        "fakeSatInfo": {
+            "size": 3,
+            "0": {
+                "zoomStart"   : 2.0,
+                "zoomStop"    : 10.0,
+                "width"       : 4624,
+                "height"      : 3472
+            },
+            "1": {
+                "zoomStart"   : 2.0,
+                "zoomStop"    : 10.0,
+                "width"       : 4624,
+                "height"      : 2600
+            },
+            "2": {
+                "zoomStart"   : 2.0,
+                "zoomStop"    : 10.0,
+                "width"       : 4624,
+                "height"      : 2080
+            }
+        }
+    },
+    "HDHDR": {
+        "mode": 1
+    }
+}

@@ -1,0 +1,5 @@
+(allow hal_dumpstate_impl thermal_data_file (dir (getattr search)))
+(allow hal_dumpstate_impl thermal_data_file (file (read getattr setattr open)))
+(allow hal_dumpstate_impl teei_data_file (file (read getattr open)))
+(allow hal_dumpstate_impl teei_data_file (dir (search)))
+

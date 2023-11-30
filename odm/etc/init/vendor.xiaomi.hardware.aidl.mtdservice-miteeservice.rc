@@ -1,0 +1,11 @@
+service vendor.mitee.mtdservice /odm/bin/mtd_mitee
+    class hal
+    user system
+    group system keystore drmrpc
+    disabled
+
+on property:sys.boot_completed=1
+    start vendor.mitee.mtdservice
+
+on init && property:ro.boot.serialno=*
+    setprop ro.vendor.oem.serialno ${ro.boot.serialno}

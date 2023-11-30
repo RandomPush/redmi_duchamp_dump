@@ -1,0 +1,12 @@
+{
+  "Effects":
+  [
+    {
+      "EffectName":"Debug",
+      "FaceInfo":
+      {
+        "ShowFacePoint":true
+      }
+    }
+  ]
+}
