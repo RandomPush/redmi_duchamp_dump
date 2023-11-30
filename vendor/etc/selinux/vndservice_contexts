@@ -1,0 +1,18 @@
+#line 1 "system/sepolicy/vendor/vndservice_contexts"
+manager                 u:object_r:service_manager_vndservice:s0
+*                       u:object_r:default_android_vndservice:s0
+#line 1 "out/out_hal/soong/.intermediates/system/sepolicy/contexts/vndservice_contexts/android_common/gen/newline"
+
+#line 1 "device/mediatek/sepolicy/base/vendor/vndservice_contexts"
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+android.IRemosaicDaemon u:object_r:remosaic_daemon_service:s0
+#line 1 "out/out_hal/soong/.intermediates/system/sepolicy/contexts/vndservice_contexts/android_common/gen/newline"
+
+#line 1 "vendor/xiaomi/proprietary/display/common/sepolicy/mtk/vndservice_contexts"
+# xiaomi Services
+DisplayFeatureControl                          u:object_r:vendor_DisplayFeatureControl_service:s0
+#line 1 "out/out_hal/soong/.intermediates/system/sepolicy/contexts/vndservice_contexts/android_common/gen/newline"
+

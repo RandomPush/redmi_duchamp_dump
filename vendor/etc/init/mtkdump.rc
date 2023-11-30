@@ -1,0 +1,8 @@
+#mtkdump service
+service mtkdump64 /vendor/bin/mtkdump64
+  class late_start
+  user root
+  group root log system
+  oneshot
+  seclabel u:r:mtkdump64:s0
+

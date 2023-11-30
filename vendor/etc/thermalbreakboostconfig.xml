@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    one config element represents an element in hashmap, the key include hint id、current temperature、current power mode,
+    the value is frequency info
+    1、Cluster:L11 include cpu0、cpu4、cpu7
+    2、default scence id is 0
+    3、 target0 represents performance mode，target1 represents balanced mode，target2 represents power mode
+    4、hint include launch、camera、mfp、scroll
+-->
+<BreakConfigs>
+    <LaunchBreak>
+        <Freqinfo
+        Target0="boost:1 cpu0:2000000 cpu4:2850000 cpu7:3200000 cpumask:ff"
+        Target1="boost:1 cpu0:2000000 cpu4:2850000 cpu7:3200000 cpumask:ff"
+        Target2="boost:1 cpu0:2000000 cpu4:2850000 cpu7:3200000 cpumask:ff"/>
+    </LaunchBreak>
+    <ResumeBreak>
+        <Freqinfo
+        Target0="boost:1 cpu0:2000000 cpu4:2660000 cpu7:2850000 cpumask:ff"
+        Target1="boost:1 cpu0:2000000 cpu4:2660000 cpu7:2850000 cpumask:ff"
+        Target2="boost:1 cpu0:2000000 cpu4:2660000 cpu7:2850000 cpumask:ff"/>
+    </ResumeBreak>
+    <ActswitchBreak>
+        <Freqinfo
+        Target0="boost:1 cpu0:2000000 cpu4:2660000 cpu7:2850000 cpumask:ff"
+        Target1="boost:1 cpu0:2000000 cpu4:2660000 cpu7:2850000 cpumask:ff"
+        Target2="boost:1 cpu0:2000000 cpu4:2660000 cpu7:2850000 cpumask:ff"/>
+    </ActswitchBreak>
+    <CameraBreak>
+        <Freqinfo
+        Target0="boost:1 cpu0:2000000 cpu4:2900000 cpu7:3100000 cpumask:ff"
+        Target1="boost:1 cpu0:2000000 cpu4:2900000 cpu7:3100000 cpumask:ff"
+        Target2="boost:1 cpu0:2000000 cpu4:2900000 cpu7:3100000 cpumask:ff"/>
+    </CameraBreak>
+    <ScrollBreak>
+        <Scene id="0">
+                <Freqinfo Trig="35000"
+                Target0="boost:1 cpu0:1800000 cpu4:2400000 cpu7:2600000"
+                Target1="boost:1 cpu0:1800000 cpu4:2400000 cpu7:2600000"
+                Target2="boost:1 cpu0:1800000 cpu4:2200000 cpu7:2500000"/>
+                <Freqinfo Trig="37000"
+                Target0="boost:1 cpu0:1800000 cpu4:2200000 cpu7:2300000"
+                Target1="boost:1 cpu0:1800000 cpu4:2200000 cpu7:2300000"
+                Target2="boost:1 cpu0:1800000 cpu4:2100000 cpu7:2100000"/>
+                <Freqinfo Trig="39000"
+                Target0="boost:1 cpu0:1800000 cpu4:2100000 cpu7:2000000"
+                Target1="boost:1 cpu0:1800000 cpu4:2100000 cpu7:2000000"
+                Target2="boost:1 cpu0:1800000 cpu4:1900000 cpu7:1900000"/>
+                <Freqinfo Trig="41000"
+                Target0="boost:1 cpu0:1800000 cpu4:1900000 cpu7:1800000"
+                Target1="boost:1 cpu0:1800000 cpu4:1900000 cpu7:1800000"
+                Target2="boost:1 cpu0:1800000 cpu4:1800000 cpu7:1600000"/>
+                <Freqinfo Trig="43000"
+                Target0="boost:1 cpu0:1800000 cpu4:1900000 cpu7:1600000"
+                Target1="boost:1 cpu0:1800000 cpu4:1900000 cpu7:1600000"
+                Target2="boost:1 cpu0:1800000 cpu4:1800000 cpu7:1500000"/>
+                <Freqinfo Trig="45000"
+                Target0="boost:1 cpu0:1500000 cpu4:1000000 cpu7:1200000"
+                Target1="boost:1 cpu0:1500000 cpu4:1000000 cpu7:1200000"
+                Target2="boost:1 cpu0:1100000 cpu4:1000000 cpu7:1200000"/>
+        </Scene>
+        <Scene id="1">
+                <Freqinfo Trig="35000"
+                Target0="boost:1 cpu0:1800000 cpu4:2500000 cpu7:2600000"
+                Target1="boost:1 cpu0:1800000 cpu4:2500000 cpu7:2600000"
+                Target2="boost:1 cpu0:1800000 cpu4:2300000 cpu7:2500000"/>
+                <Freqinfo Trig="37000"
+                Target0="boost:1 cpu0:1800000 cpu4:2300000 cpu7:2400000"
+                Target1="boost:1 cpu0:1800000 cpu4:2300000 cpu7:2400000"
+                Target2="boost:1 cpu0:1800000 cpu4:2200000 cpu7:2200000"/>
+                <Freqinfo Trig="39000"
+                Target0="boost:1 cpu0:1800000 cpu4:2200000 cpu7:2200000"
+                Target1="boost:1 cpu0:1800000 cpu4:2200000 cpu7:2200000"
+                Target2="boost:1 cpu0:1800000 cpu4:2100000 cpu7:2100000"/>
+                <Freqinfo Trig="41000"
+                Target0="boost:1 cpu0:1800000 cpu4:2100000 cpu7:2000000"
+                Target1="boost:1 cpu0:1800000 cpu4:2100000 cpu7:2000000"
+                Target2="boost:1 cpu0:1800000 cpu4:1900000 cpu7:1900000"/>
+                <Freqinfo Trig="43000"
+                Target0="boost:1 cpu0:1800000 cpu4:1900000 cpu7:1700000"
+                Target1="boost:1 cpu0:1800000 cpu4:1900000 cpu7:1700000"
+                Target2="boost:1 cpu0:1800000 cpu4:1800000 cpu7:1600000"/>
+                <Freqinfo Trig="45000"
+                Target0="boost:1 cpu0:1500000 cpu4:1000000 cpu7:1200000"
+                Target1="boost:1 cpu0:1500000 cpu4:1000000 cpu7:1200000"
+                Target2="boost:1 cpu0:1100000 cpu4:1000000 cpu7:1200000"/>
+        </Scene>
+    </ScrollBreak>
+</BreakConfigs>    

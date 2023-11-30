@@ -1,0 +1,4 @@
+service vendor.miface /vendor/bin/hw/mifaced
+    class hal
+    user system
+    group system

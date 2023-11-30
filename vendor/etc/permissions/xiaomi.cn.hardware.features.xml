@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  This is the standard feature indicating that the device includes xiaomi feature  -->
+<!--  xiaomi.hardware.p2p_160m: support p2p connection 160m width  -->
+<permissions>
+<feature name="xiaomi.hardware.p2p_160m"/>
+</permissions>
